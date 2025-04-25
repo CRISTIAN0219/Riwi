@@ -39,16 +39,57 @@ Este se utiliza cuando se quiere imprimir un texto o depurar.
 Permite que el usuario ingrese datos, siempre devuelve una cadena de texto.
 
 ## Convertir tipos de datos:
-Int: numero = int("10")
+    Int: numero = int("10")
 
-Float: decimal = float("3.14")
+    Float: decimal = float("3.14")
 
-Str: texto = str(123)
+    Str: texto = str(123)
 
 ## Que es un error? Errores comunes en principiantes
 -Error de sintaxis: Ocurren cuando se escribe el código de manera incorrecta (por ejemplo, olvidando un paréntesis) O  "unas comillas".
 
 Errores de tipo: Cuando se intenta hacer una operación con tipos de datos incompatibles (por ejemplo, sumar un texto con un número).
+
+
+# ¿Qué es una lista y para qué sirve?
+Una lista es una colección ordenada de elementos que pueden ser de cualquier tipo: números, texto, otras listas, etc. 
+# Crear listas: [ ]
+Las listas se crean con corchetes y los elementos se separan con comas.
+
+    numeros = [1, 2, 3, 4, 5]
+    vacia = []
+
+# Acceder a elementos de una lista (lista[0]).
+Se puedes acceder a un elemento usando su índice. Los índices empiezan en 0.
+
+    print(frutas[0])  # "manzana"
+    print(frutas[1])  # "banana"
+
+# Modificar elementos de una lista.
+Puedes cambiar el valor de un elemento indicando su posición.
+
+    frutas[1] = "pera"
+    print(frutas)  # ["manzana", "pera", "naranja"]
+
+
+# Agregar elementos a una lista: append()
+Usamos append() para agregar un elemento al final de la lista.
+# Eliminar elementos de una lista: remove() y pop().
+remove(valor) elimina el primer elemento que coincida.
+
+pop() elimina el último elemento (o uno por índice).
+
+    frutas.remove("pera")
+    print(frutas)  # ["manzana", "naranja", "uva"]
+
+    frutas.pop()
+    print(frutas)  # ["manzana", "naranja"]
+
+# Conocer la cantidad de elementos: len().
+La función len() devuelve el número de elementos en una lista.
+# Recorrer listas con un for.
+Puedes usar un for para recorrer todos los elementos:
+
 
 # Logica de programacion
 ## Comparacion de datos
@@ -69,22 +110,22 @@ Se usan para comparar valores
 ## Tomar decisiones
 Usamos if, else y elif para ejecutar diferentes bloques de código dependientes de una condición.
 
-if numero > 100:
+    if numero > 100:
 
     print("numero es mayor que 100")
     
-elif numero == 100:
+    elif numero == 100:
 
     print("numero es 100")
     
-else:
+    else:
 
     print("numero es menor que 100")
 
 ## Combinar condiciones
 Se usa para combinar condiciones
 
-if numero > 100 and (y) < 50:
+    if numero > 100 and (y) < 50:
 
     print("Las condiciones son verdaderas")
     
@@ -109,6 +150,34 @@ Leer el mensaje: Python generalmete indica cual es el error y donde se encuentra
 Bucar en linea: Usa google o foros como StackOverflow para encontrar soluciones
 
 No fustrarse: El programar es un proceso de errores y intentos en el cual se debe tener paciencia en los intentos fallidos, ya que la practica ayuda a mejorar
+
+
+# Qué es un bucle anidado.
+Un bucle anidado es un bucle dentro de otro bucle. Se usa cuando necesitas recorrer estructuras más complejas, como listas de listas (por ejemplo, una matriz).
+# Cómo funcionan los índices y rangos en listas (range()).
+Los índices comienzan en 0. Cada elemento de una lista tiene una posición:
+# Introducción a las funciones: ¿qué es una función y por qué usarlas?
+Una función es un bloque de código que se puede usar varias veces. Sirve para organizar mejor tu programa, evitar repetir código y hacerlo más legible.
+
+🔹 Piensa en una función como una "máquina" a la que le das algo y te devuelve algo (o hace una acción).
+# Definir funciones con def.
+Se usa la palabra clave def para crear una función:
+
+    def saludar():
+    print("Hola, mundo!")
+
+# Llamar (usar) funciones.
+Para usar una función que ya definiste, solo tienes que escribir su nombre con paréntesis:
+# Parámetros y argumentos en funciones. 
+#### Parámetros
+Son variables que usas dentro de la función. Se escriben entre paréntesis al definirla.
+
+#### Argumentos
+
+Son los valores reales que le pasas cuando llamas a la función.
+# Qué es el retorno de una función: return.
+Una función puede devolver un valor usando return. Esto te permite guardar el resultado y usarlo más adelante.
+
 
 # Estructura de control
 ## Repetir acciones con bucles
