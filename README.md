@@ -1,4 +1,4 @@
-# Riwi
+# Semana 1
 # Fundamentos
 ## Qué es programar?
 La creacion de programas o aplicaciones a traves de lenguajes de programacion
