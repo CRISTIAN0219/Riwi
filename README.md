@@ -159,7 +159,7 @@ Los índices comienzan en 0. Cada elemento de una lista tiene una posición:
 # Introducción a las funciones: ¿qué es una función y por qué usarlas?
 Una función es un bloque de código que se puede usar varias veces. Sirve para organizar mejor tu programa, evitar repetir código y hacerlo más legible.
 
-🔹 Piensa en una función como una "máquina" a la que le das algo y te devuelve algo (o hace una acción).
+Piensa en una función como una "máquina" a la que le das algo y te devuelve algo (o hace una acción).
 # Definir funciones con def.
 Se usa la palabra clave def para crear una función:
 
